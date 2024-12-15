@@ -1,0 +1,90 @@
+.address--primary {
+  background-color: $lightest-grey;
+}
+
+.address__wrapper {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.address__info-wrapper {
+  @include global-paddings(20px, 70px, 80px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    gap: 308px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    gap: 87px;
+    max-width: 405px;
+    background-color: #ffffff;
+  }
+}
+
+.address__intro {
+  max-width: 140px;
+  margin: 0;
+  padding: 26px 0;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    max-width: 163px;
+    padding: 60px 0;
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.address__address {
+  padding: 26px 0;
+  font-style: normal;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    padding: 60px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    padding-left: 2px;
+  }
+}
+
+.address__address p {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+  }
+}
+
+.address__map-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.address__map {
+  display: block;
+  width: 100%;
+  height: 362px;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}

@@ -1,0 +1,21 @@
+.catalog__wrapper {
+  @include global-paddings;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.catalog__list {
+  @include list-style;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 71px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 73px 80px;
+  }
+}
